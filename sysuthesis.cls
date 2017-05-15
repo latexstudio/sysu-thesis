@@ -381,17 +381,17 @@
 }
 
 \newcommand\makedisclaim{
-\ctexset {
-    chapter = {
-        titleformat = {\zihao{-2}\fangsong\bfseries},
-        beforeskip = {10pt},
-        afterskip = {40pt}
+    \ctexset {
+        chapter = {
+            titleformat = {\zihao{-2}\fangsong\bfseries},
+            beforeskip = {10pt},
+            afterskip = {40pt}
+        }
     }
-}
-\input{docs/disclaim}
-\thispagestyle{empty}
-\clearpage
-%\clearemptydoublepage     % 空白页
+    \input{docs/disclaim}
+    \thispagestyle{empty}
+    \clearpage
+    %\clearemptydoublepage     % 空白页
 }
 
 % 摘要
