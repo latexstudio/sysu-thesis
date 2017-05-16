@@ -2,6 +2,7 @@
 
 \input{docs/info}     % 论文相关信息
 \input{docs/proposal}   % 开题报告内容
+\input{docs/checkup}    % 过程检查内容
 \input{docs/abstract}     % 摘要内容
 
 \begin{document}
@@ -9,8 +10,8 @@
     \frontmatter
         \pagenumbering{Roman}
         \maketitle    % 封面
-        \makeProposal% 开题报告
-        % 过程检查记录表
+        \makeProposal   % 开题报告
+        \makeCheckup    % 过程检查记录表
         % 答辩情况等级表
         \makedisclaim     % 学术诚信声明
         \makeabstract     % 中英文摘要

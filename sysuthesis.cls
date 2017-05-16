@@ -307,7 +307,7 @@
 
     \begin{center}
         \zihao{3}\fangsong\bfseries
-        表一\hspace{\ccwd}毕业论文（设计）开题报告 \\
+        表一:\hspace{\ccwd}毕业论文（设计）开题报告 \\
         Form 1: Research Proposal of Graduation Thesis (Design)
     \end{center}
     %\addcontentsline{toc}{chapter}{表一 毕业论文（设计）开题报告}
@@ -331,7 +331,6 @@
         \endfoot
 
         % 表格最后一页的表脚
-        %\hline
         指导教师意见:\\
         Comments from Supervisor: \\
         \@proposalInstructions  \\
@@ -375,6 +374,98 @@
         \hspace{2\ccwd}Student Signature:\hfill Date:\makebox{\hspace{10\ccwd}} \\
         \rule{0cm}{\baselineskip}\\
         \hline
+    \end{longtable}
+    \clearpage
+    %\clearemptydoublepage
+}
+
+% 过程检查记录表
+\newcommand\summaryFirst[1]{\def\@summaryFirst{#1}}
+\newcommand\summarySecond[1]{\def\@summarySecond{#1}}
+\newcommand\summaryThird[1]{\def\@summaryThird{#1}}
+\newcommand\summaryForth[1]{\def\@summaryForth{#1}}
+\newcommand\commentFirst[1]{\def\@commentFirst{#1}}
+\newcommand\commentSecond[1]{\def\@commentSecond{#1}}
+\newcommand\commentThird[1]{\def\@commentThird{#1}}
+\newcommand\commentForth[1]{\def\@commentForth{#1}}
+\newcommand\overallComment[1]{\def\@overallComment{#1}}
+
+\newcommand\makeCheckup{
+    \pagestyle{empty}
+
+    \begin{center}
+        \zihao{3}\fangsong\bfseries
+        表二:\hspace{\ccwd}毕业论文（设计）过程检查情况记录表 \\
+        Form 2:Process Check-up Form
+    \end{center}
+    %\addcontentsline{toc}{chapter}{表二: 毕业论文(设计)过程检查情况记录表}
+
+    \zihao{-4}\songti
+    \begin{longtable}{|p{0.9\textwidth}|}
+        % 第一页出现的表头
+        \hline
+        \endfirsthead
+
+        % 中间页出现的表头
+        \hline
+        %(前接)
+        \endhead
+
+        % 中间页出现的表脚
+        %(后续) \\
+        \hline
+        \endfoot
+
+        % 表格最后一页的表脚
+        %\begin{tabular}{|p{0.4\textwidth}|p{0.5\textwidth}|}
+        %\end{tabular}
+        \hline
+        \endlastfoot
+
+        % WARN: longtable环境内bfseries只应用于当前行
+        \bfseries 指导教师分阶段检查论文的进展情况(要求过程检查记录不少于 3 次)   \\
+        \bfseries The supervisor should check up the working process for the thesis(design)and fill up the following check-up log. At least three times of the check-up should be done and kept on the log.
+        \vspace{\baselineskip}
+
+        \textbf{第1次检查（First Check-up）：}  \\
+        \hspace{2\ccwd}学生总结    \\
+        \hspace{2\ccwd}Student Self-summary: \@summaryFirst
+        \vspace{\baselineskip}
+
+        \hspace{2\ccwd}指导教师意见 \\
+        \hspace{2\ccwd}Comments of Supervisor: \@commentFirst
+        \vspace{2\baselineskip}
+
+        \textbf{第2次检查（Second Check-up）：}  \\
+        \hspace{2\ccwd}学生总结    \\
+        \hspace{2\ccwd}Student Self-summary: \@summarySecond
+        \vspace{\baselineskip}
+
+        \hspace{2\ccwd}指导教师意见 \\
+        \hspace{2\ccwd}Comments of Supervisor: \@commentSecond
+        \vspace{2\baselineskip}
+
+        \textbf{第3次检查（Third Check-up）：}  \\
+        \hspace{2\ccwd}学生总结    \\
+        \hspace{2\ccwd}Student Self-summary: \@summaryThird
+        \vspace{\baselineskip}
+
+        \hspace{2\ccwd}指导教师意见 \\
+        \hspace{2\ccwd}Comments of Supervisor: \@commentThird
+        \vspace{2\baselineskip}
+
+        \textbf{第4次检查（Forth Check-up）：}  \\
+        \hspace{2\ccwd}学生总结    \\
+        \hspace{2\ccwd}Student Self-summary: \@summaryForth
+        \vspace{\baselineskip}
+
+        \hspace{2\ccwd}指导教师意见 \\
+        \hspace{2\ccwd}Comments of Supervisor: \@commentForth
+        \vspace{2\baselineskip}
+
+        学生签名(Student Signature):\hfill 日期(Date):\makebox{\hspace{10\ccwd}}    \\
+        指导教师签名(Supervisor Signature):\hfill 日期(Date):\makebox{\hspace{10\ccwd}}
+        \rule{0cm}{\baselineskip}\\
     \end{longtable}
     \clearpage
     %\clearemptydoublepage
