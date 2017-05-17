@@ -417,8 +417,6 @@
         \endfoot
 
         % 表格最后一页的表脚
-        %\begin{tabular}{|p{0.4\textwidth}|p{0.5\textwidth}|}
-        %\end{tabular}
         \hline
         \endlastfoot
 
@@ -463,10 +461,11 @@
         \hspace{2\ccwd}Comments of Supervisor: \@commentForth
         \vspace{2\baselineskip}
 
-        学生签名(Student Signature):\hfill 日期(Date):\makebox{\hspace{10\ccwd}}    \\
-        指导教师签名(Supervisor Signature):\hfill 日期(Date):\makebox{\hspace{10\ccwd}}
-        \rule{0cm}{\baselineskip}\\
+        学生签名(Student Signature):\hfill 日期(Date):\makebox{\hspace{6\ccwd}}    \\
+        指导教师签名(Supervisor Signature):\hfill 日期(Date):\makebox{\hspace{6\ccwd}}
+        \vspace{\baselineskip}
     \end{longtable}
+
     \clearpage
     %\clearemptydoublepage
 }
